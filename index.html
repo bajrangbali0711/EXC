@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooling Load Calculator(21BEE0239)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cooling Load Calculator</h2>
+        <label for="area">Area (sqm):</label>
+        <input type="number" id="area">
+        <label for="occupants">Number of Occupants:</label>
+        <input type="number" id="occupants">
+        <label for="buildingType">Building Type:</label>
+        <select id="buildingType">
+            <option value="1">Residential</option>
+            <option value="2">Commercial</option>
+        </select>
+        <br><br>
+        <label for="outdoorTemp">Outdoor Temperature (°C):</label>
+        <input type="number" id="outdoorTemp">
+        <label for="indoorTemp">Indoor Desired Temperature (°C):</label>
+        <input type="number" id="indoorTemp">
+        <button onclick="calculateCoolingLoad()">Calculate</button>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
